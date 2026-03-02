@@ -55,4 +55,13 @@ require("lazy").setup({
 require("nvim-treesitter").setup({
   -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
   install_dir = vim.fn.stdpath("data") .. "/site",
+  indent = { enable = True },
+})
+
+require("lazy").setup({
+  -- Python PEP8 indent plugin
+  {
+    "Vimjas/vim-python-pep8-indent",
+    ft = "python", -- only load for Python files
+  },
 })
