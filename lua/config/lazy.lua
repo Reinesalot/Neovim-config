@@ -58,10 +58,10 @@ require("nvim-treesitter").setup({
   indent = { enable = True },
 })
 
-require("lazy").setup({
-  -- Python PEP8 indent plugin
-  {
-    "Vimjas/vim-python-pep8-indent",
-    ft = "python", -- only load for Python files
-  },
-})
+-- require("lazy").setup({
+--   -- Python PEP8 indent plugin
+--   {
+--     "Vimjas/vim-python-pep8-indent",
+--     ft = "python", -- only load for Python files
+--   },
+-- })
